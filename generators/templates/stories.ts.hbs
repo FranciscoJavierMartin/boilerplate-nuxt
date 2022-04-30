@@ -1,0 +1,18 @@
+import {{pascalCase name}} from './{{pascalCase name}}.vue';
+
+export default {
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}},
+  args: {},
+};
+
+const Template = (args) => ({
+  components: { {{pascalCase name}} },
+  setup() {
+    return { args };
+  },
+  template: '<{{pascalCase name}} v-bind="args"/>',
+});
+
+export const Basic = Template.bind({});
+Basic.args = {};
